@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="412dp"
+        android:layout_height="62dp"
+        android:background="#FFC107"
+        android:backgroundTint="#FFC107"
+        android:elegantTextHeight="false"
+        android:freezesText="false"
+        android:text="Cloud File Manager Apps"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:firstBaselineToTopHeight="45dp"
+        app:lastBaselineToBottomHeight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/firebaseimage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="30dp"
+        android:adjustViewBounds="false"
+        android:soundEffectsEnabled="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/selectImagebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <Button
+        android:id="@+id/selectImagebtn"
+        android:layout_width="383dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#FF8F07"
+        android:shadowColor="#FFEB3B"
+        android:text="Pilih Gambar"
+        android:textAllCaps="false"
+        android:textColorHighlight="#FFC107"
+        app:icon="?android:attr/colorPressedHighlight"
+        app:iconTint="#FFC107"
+        app:layout_constraintBottom_toTopOf="@+id/uploadimagebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#FFC107"
+        app:strokeColor="#FFC107"
+        app:toggleCheckedStateOnClick="false" />
+
+    <Button
+        android:id="@+id/uploadimagebtn"
+        android:layout_width="392dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="192dp"
+        android:backgroundTint="#FF8F07"
+        android:foregroundTint="#FF9800"
+        android:shadowColor="#FF8F07"
+        android:text="Unggah Gambar"
+        android:textAllCaps="false"
+        app:icon="@android:color/holo_orange_light"
+        app:iconTint="#FF8F07"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
